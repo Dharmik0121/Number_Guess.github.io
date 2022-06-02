@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guess The Number</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>How lucky you are?</h1>
+        <div class="mar">
+            <marquee Scrollamount="20" width="100%">Enter number between 1 to 20...</marquee>
+        </div>
+        <div class="box">
+            <input id="text" onfocus="clearThis(this)" type="text">
+            <p>Guess Number...</p>
+        </div>
+        <div class="submit">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+        <div class="abc">
+            <p id="content"></p>
+        </div>
+        <div class="submit">
+            <button onclick="document.location.reload(true)" type="reset">Play Again</button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
